@@ -1,0 +1,8 @@
+{
+	"appName": "goProbe",
+	"hostName": "localhost",
+	"hostPort": 5005,
+	"logPath": "C:\\Logs\\error.log",
+	"debugEnabled": false,
+	"interval": 120
+}
