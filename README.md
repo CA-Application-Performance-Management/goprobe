@@ -7,14 +7,10 @@ This project is intended to build a stable and extensible SDK for instrumenting 
 An SDK based instrumentation for applications developed in GO language.
 
 ## APM version
-Tested with APM Nextgen.
+Tested with APM 11.1.
 
 ## Supported third party versions
 None
-
-## Limitations
-- Cross process Co-relation
-- Attribute Decoration
 
 ## License
 [Apache License, Version 2.0](LICENSE)
@@ -26,7 +22,7 @@ None
 https://golang.org/dl/
 
 - GoExtension - Download the latest extension from CA APM and deploy as part of Infrastructure agent process, we require credentials to login please contact Broadcom Support.
-https://cloud.ca.com/cloudmanagement/#/
+https://support.ca.com/
 
 ## Dependencies
 - GOSDK depends on third party package for unique id generation, so install the package before instrumentation.<br/>
@@ -183,6 +179,11 @@ func sqlSegment(ctx context.Context) {
 - Bytes In Use - Represents the Bytes of allocated heap objects.
 - Bytes Total - Represents the cumulative bytes of allocated heap objects.
 - Routines Total - Represents the number of running Go routines.
+
+## Limitations
+- Cross process Co-relation : Often transactions travel across multiple JVMs, CLRs or Node.js instances, or application services, depending on the environment. Collecting the full transaction path requires tracing synchronous and asynchronous calls across JVM, CLR, or Node.js instance boundaries. This ability lets you view details when transactions call methods on multiple JVMs or CLRs running on different servers.
+
+- Attribute Decoration : Probes may have some useful information and it is critical to use as attributes. Information such as Environment details, static attributes and attributes from external properties which can be configured at the probe end needs to be propagated to ATC as custom attributes.
 
 ## Support
 This document and associated tools are made available from CA Technologies as examples and provided at no charge as a courtesy to the CA APM Community at large. This resource may require modification for use in your environment. However, please note that this resource is not supported by CA Technologies, and inclusion in this site should not be construed to be an endorsement or recommendation by CA Technologies. These utilities are not covered by the CA Technologies software license agreement and there is no explicit or implied warranty from CA Technologies. They can be used and distributed freely amongst the CA APM Community, but not sold. As such, they are unsupported software, provided as is without warranty of any kind, express or implied, including but not limited to warranties of merchantability and fitness for a particular purpose. CA Technologies does not warrant that this resource will meet your requirements or that the operation of the resource will be uninterrupted or error free or that any defects will be corrected. The use of this resource implies that you understand and agree to the terms listed herein.
