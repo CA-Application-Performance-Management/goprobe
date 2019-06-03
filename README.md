@@ -7,7 +7,7 @@ This project is intended to build a stable and extensible SDK for instrumenting 
 An SDK based instrumentation for applications developed in GO language.
 
 ## APM version
-Tested with APM 11.1.
+APM 11.1.
 
 ## Supported third party versions
 None
