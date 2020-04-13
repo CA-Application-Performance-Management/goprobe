@@ -11,7 +11,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/CA-APM/goprobe"
+	"github.com/CA-Application-Performance-Management/goprobe"
 	"github.com/gorilla/mux"
 )
 

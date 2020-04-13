@@ -38,7 +38,7 @@ https://support.ca.com/
 ## Installation
 - Open command prompt and download the code from the repository.<br/>
 	```
-	go get github.com/CA-APM/goprobe
+	go get github.com/CA-Application-Performance-Management/goprobe
 	```
 
 ## Configuration
@@ -79,7 +79,7 @@ These are the interfaces exposed by the SDK and these needs to be used to instru
 ### Interface Usages
 Inorder to use the interfaces provided by the SDK, users has to import the package in their application and then invoke the interfaces.
 ```
-import "github.com/CA-APM/goprobe"
+import "github.com/CA-Application-Performance-Management/goprobe"
 ```
 
 #### InitGoProbe
@@ -90,7 +90,7 @@ func main() {
 	handleRequests()
 }
 After Instrumentation:
-import "github.com/CA-APM/goprobe"
+import "github.com/CA-Application-Performance-Management/goprobe"
 
 func main() {
 	goprobe.InitGoProbe()
@@ -193,7 +193,7 @@ Although these utilities are unsupported, please let us know if you have any pro
 Unless explicitly stated otherwise this extension is only supported on the same platforms as the APM core agent. See [APM Compatibility Guide](http://www.ca.com/us/support/ca-support-online/product-content/status/compatibility-matrix/application-performance-management-compatibility-guide.aspx).
 
 ### Support URL
-https://github.com/CA-APM/goprobe/issues
+https://github.com/CA-Application-Performance-Management/goprobe/issues
 
 # Contributing
 The [CA APM Community](https://communities.ca.com/community/ca-apm) is the primary means of interfacing with other users and with the CA APM product team.  The [developer subcommunity](https://communities.ca.com/community/ca-apm/ca-developer-apm) is where you can learn more about building APM-based assets, find code examples, and ask questions of other developers and the CA APM product team.
@@ -206,3 +206,4 @@ Changes for each version of the extension.
 Version | Author | Comment
 --------|--------|--------
 1.0 | SrimanNarayana Vema | First version of the extension.
+1.1 | SrimanNarayana Vema | Publish probe to CA-APM

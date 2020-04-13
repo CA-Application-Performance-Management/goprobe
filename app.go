@@ -8,8 +8,8 @@ package goprobe
 import (
 	"sync"
 
-	cc "github.com/CA-APM/goprobe/internal/config"
-	ll "github.com/CA-APM/goprobe/internal/logger"
+	cc "github.com/CA-Application-Performance-Management/goprobe/internal/config"
+	ll "github.com/CA-Application-Performance-Management/goprobe/internal/logger"
 )
 
 //application type hold the app instance of the whole package

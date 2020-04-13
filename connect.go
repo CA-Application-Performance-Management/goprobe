@@ -14,8 +14,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/CA-APM/goprobe/internal/metric"
-	"github.com/CA-APM/goprobe/internal/utils"
+	"github.com/CA-Application-Performance-Management/goprobe/internal/metric"
+	"github.com/CA-Application-Performance-Management/goprobe/internal/utils"
 )
 
 //TODO now Global need to move

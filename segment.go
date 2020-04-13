@@ -10,7 +10,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/CA-APM/goprobe/internal/utils"
+	"github.com/CA-Application-Performance-Management/goprobe/internal/utils"
 )
 
 const (

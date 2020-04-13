@@ -8,7 +8,7 @@ import (
 	"context"
 	"strconv"
 
-	"github.com/CA-APM/goprobe/internal/utils"
+	"github.com/CA-Application-Performance-Management/goprobe/internal/utils"
 )
 
 //The Transaction type contains the transaction data to be used while

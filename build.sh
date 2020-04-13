@@ -10,7 +10,7 @@ MET_WD=$PRE_PWD/internal/metric
 UTL_WD=$PRE_PWD/internal/utils
 
 #goprobe path
-SDK_PATH="src/github.com/CA-APM/goprobe"
+SDK_PATH="src/github.com/CA-Application-Performance-Management/goprobe"
 
 export GOPATH=${WORKSPACE}
 go get github.com/satori/go.uuid

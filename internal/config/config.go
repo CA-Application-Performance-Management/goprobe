@@ -12,8 +12,8 @@ import (
 	"path/filepath"
 	"strconv"
 
-	"github.com/CA-APM/goprobe/internal/logger"
-	util "github.com/CA-APM/goprobe/internal/utils"
+	"github.com/CA-Application-Performance-Management/goprobe/internal/logger"
+	util "github.com/CA-Application-Performance-Management/goprobe/internal/utils"
 )
 
 /*Configuration ...*/
@@ -109,7 +109,7 @@ func ReadConfig() (Configuration, logger.Logger) {
 //loadConfig reads the config.json and decode the configurations
 //Reads the config file and exits the process if no file/failed to decode
 func loadConfig() Configuration {
-	confPath := filepath.Join(os.Getenv("GOPATH"), "src", "github.com", "CA-APM", "goprobe", "config.json")
+	confPath := filepath.Join(os.Getenv("GOPATH"), "src", "github.com", "CA-Application-Performance-Management", "goprobe", "config.json")
 	file, err := os.Open(confPath)
 	if err != nil {
 		log.Fatal("unable to open config file: ", err)
